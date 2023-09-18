@@ -1,0 +1,124 @@
+.Todowrapper {
+    padding: 3rem;
+    background: #f7f6ff;
+    border-radius: 6px;
+    min-height: 25rem;
+    filter: drop-shadow(22REM -1REM 24REM #d22b66);
+    overflow: hidden;
+    box-shadow: 0 0 3rem 1px #5f0278;
+}
+form.Todoform {
+    border: white;
+    justify-content: center;
+    padding: 0rem 1rem;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    margin: 1.5rem;
+    white-space: nowrap;
+}
+
+input.input-todo {
+    padding: 2% 6%;
+    width: 25rem;
+    background:#8f8f8f;
+    color: rgb(208, 204, 204);
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid #000;
+    border-right: none;
+    transition: 0.3s;
+}
+button.input-todo-button {
+    padding: 1% 2rem;
+    font-size: 18px;
+    background: #000;
+    font-weight: 600;
+    border: 2px solid rgb(0, 0, 0);
+    color: white;
+    transition: 0.3s;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+button.input-todo-button:hover{
+    border-radius: 0 5px 5px 0;
+    background-color: #381e4b;
+}
+
+::placeholder {
+    border: none;
+    color: #fff;
+}
+input.input-todo:focus-visible {
+    outline: none;
+    color: #fff;
+}
+.Todo {
+    background: #000;
+    margin: 3% 4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #fff;
+    padding: 5px 20px 5px 2rem;
+    border-radius: 50px;
+    font-size: 18.5px;
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    filter: drop-shadow(0rem 1rem 56px #7b6d6dab);
+    letter-spacing: 0.05em;
+    column-gap: 2rem;
+}
+.Todo div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin-right: 1rem;
+    font-size: 20px;
+}
+.icons {
+    padding: 10px;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transition:all ease 0.3s;
+}
+.icons:hover {
+    background: black;
+    color: white;
+}
+.Todo p{
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+.completed {
+    text-decoration: line-through;
+    text-decoration-line: line-through;
+    color: rgb(153, 149, 149);
+}
+.Todowrapper h1{
+    font-size: 35px;
+    margin: 0 1rem 2rem;
+    font-weight: 600;
+}
+.Circlesvg{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    filter: drop-shadow(0px 0px 3rem #7a4fb1c9);
+    background: #000;
+}
+.kid1 {
+    top: -50%;
+    left: -15%;
+}
+.kid2{
+    left: 80%;
+} 
