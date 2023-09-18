@@ -1,6 +1,6 @@
-# Radiamine: The Study App
+# Radium: The Study App
 
-Welcome to Radiamine, your all-in-one study companion! Radiamine is a feature-packed study app designed to help you stay organized, focused, and productive during your study sessions. Whether you're a student or a professional, Radiamine has you covered.
+Welcome to Radium, your all-in-one study companion! Radium is a feature-packed study app designed to help you stay organized, focused, and productive during your study sessions. Whether you're a student or a professional, Radium has you covered.
 
 ## Features
 
@@ -16,7 +16,7 @@ Welcome to Radiamine, your all-in-one study companion! Radiamine is a feature-pa
 
 ## Contributing
 
-We welcome contributions from the community. If you'd like to contribute to Radiamine, please follow these guidelines:
+We welcome contributions from the community. If you'd like to contribute to Radium, please follow these guidelines:
 
 1. Fork the repository and create your branch from `main`.
 
@@ -41,4 +41,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Happy studying with Radiamine: The Study App!** 📚📝🎶
+**Happy studying with Radium: The Study App!** 📚📝🎶
