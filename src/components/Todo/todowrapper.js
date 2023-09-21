@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Todoform } from './Todoform';
 import { v4 as uuidv4 } from 'uuid';
-import './Local.css';
-import { Editform } from './editform';
+import '../../App.css'
 import { Todo } from './todo';
 uuidv4();
 const getlocaldata = () => {
@@ -26,12 +25,6 @@ export const Todowrapper = () => {
   const deleteTodo = id => {
     setTodos(todos.filter(todo => todo.id !== id))
   }
-  const editTodo = id => {
-    setTodos(todos.map(todo => todo.id === id ? { ...todo, isEditing: !todo.isEditing } : todo))
-  }
-  const editTask = (task, id) => {
-    setTodos(todos.map(todo => todo.id === id ? { ...todo, task, isEditing: !todo.isEditing } : todo))
-  }
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
@@ -39,14 +32,9 @@ export const Todowrapper = () => {
   return (
     <div className='Todowrapper'>
       <h1>Set your Goals !</h1>
-      <div className='Circlesvg kid1'></div>
       <Todoform addTodo={addTodo} />
-      {todos.map((todo, index) => (
-        todo.isEditing ?
-          (<Editform editTodo={editTask} task={todo} />) :
-          (<Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo} />)
+      {todos.map((todo, index) => (<Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo}/>
       ))}
-      <div className='Circlesvg kid2'></div>
     </div>
   )
 }
