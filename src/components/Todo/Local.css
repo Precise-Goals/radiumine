@@ -82,6 +82,10 @@ input.input-todo:focus-visible {
     margin-right: 1rem;
     font-size: 20px;
 }
+.Todo, .Todo div {
+    max-width: 30rem;
+    font-size: 90%;
+}
 .icons {
     padding: 10px;
     border-radius: 2rem;
