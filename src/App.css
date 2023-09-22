@@ -296,15 +296,65 @@ button.input-todo-button {
   border-radius: 5px;
   background-color: var(--barcolors);
 }
-#tsparticles{
+#tsparticles {
   z-index: 0;
   position: relative;
 }
-#task{
+#task {
   z-index: 1;
   position: relative;
 }
-.nav{
+.nav {
   position: relative;
   z-index: 1;
+}
+.nhi {
+  display: none;
+}
+@media (max-width: 1024px) and (min-width: 120px) {
+  .nhi {
+    display: contents;
+    font-size: 180%;
+    font-family: sans-serif;
+    position: relative;
+    font-weight: 800;
+  }
+  .nav {
+    display: none;
+  }
+  .task {
+    display: none;
+  }
+  .App section {
+    display: none;
+  }
+  .App {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    margin-top: 1rem;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .circle1 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    top: -40%;
+    left: -43%;
+  }
+  .circle2 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: -54%;
+    right: -47%;
+    background: gray;
+    border-radius: 50%;
+  }
 }
