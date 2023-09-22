@@ -33,8 +33,9 @@ export const Todowrapper = () => {
     <div className='Todowrapper'>
       <h1>Set your Goals !</h1>
       <Todoform addTodo={addTodo} />
-      {todos.map((todo, index) => (<Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo}/>
-      ))}
+      <div className='todolist'>
+        {todos.map((todo, index) => (<Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />))}
+      </div>
     </div>
   )
 }
