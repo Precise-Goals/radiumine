@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './containers/navbar'; // Update the path to your Navbar component
 import Task from './containers/task';
 import ParticleBackground from '../src/components/Particles/Particle'
+import Footer from './containers/footer';
 import './App.css';
 
 
@@ -22,7 +23,10 @@ function App() {
         <Navbar changeSectionClassName={changeSectionClassName} />
         <Task />
       </section>
-      <p>Made by sarthak 2023</p>
+      <div className='footer'>
+        <Footer/>
+      </div>
+      <p className='looks'>Made by sarthak 2023</p>
       <div className='circle2'></div>
     </div>
   );

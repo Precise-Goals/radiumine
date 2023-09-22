@@ -308,9 +308,111 @@ button.input-todo-button {
   position: relative;
   z-index: 1;
 }
-.nhi {
+.nhi,
+.looks {
   display: none;
 }
+
+.footer {
+  position: relative;
+  z-index: 5;
+  background-color: #000000;
+}
+.logo {
+  color: #fff;
+}
+.footwrap {
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftcul {
+  display: flex;
+  flex-direction: column;
+  text-align: initial;
+  align-items: flex-start;
+}
+
+.leftcul p {
+  margin: 1% 9%;
+  font-size: 107%;
+  width: 45%;
+  color: #fff;
+  font-family: Poppins;
+}
+
+ul.foot-links {
+  text-align: end;
+  list-style: none;
+  min-width: 14rem;
+  position: relative;
+  display: flex;
+  font-weight: bold;
+  font-size: 160%;
+  row-gap: 0.5rem;
+  margin-right: 5%;
+  flex-direction: column;
+  letter-spacing: 0.05em;
+  align-items: flex-end;
+}
+
+.foot-links a {
+  color: white;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+  right: 5rem;
+}
+
+.embed {
+  width: 21px;
+  border-radius: 49px;
+  background: #00d5ffd1;
+}
+
+.downcul {
+  font-size: 125%;
+  margin: 1em;
+  font-family: "MA";
+  color: #ffffffa3;
+}
+
+.topbutton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 9px;
+  position: relative;
+  left: 91rem;
+  bottom: 5rem;
+  cursor: pointer;
+  z-index: 7;
+}
+.topbutton a img {
+  width: 100%;
+}
+
+.topbutton a {
+  display: contents;
+}
+.todobutton:hover{
+  background-color: #000000;
+}
+.todobutton a img:hover{
+  filter: invert(1);
+}
+
+/* Mobiles */
 @media (max-width: 1024px) and (min-width: 120px) {
   .nhi {
     display: contents;

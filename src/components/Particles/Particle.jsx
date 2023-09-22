@@ -20,7 +20,7 @@ function App() {
           loaded={particlesLoaded}
               options={{
             background: {
-              color: 'transparent',
+              color: '#transparent',
             },
             fpsLimit: 60,
             interactivity: {
