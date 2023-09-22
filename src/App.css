@@ -183,7 +183,7 @@ form.Todoform {
   justify-content: center;
   margin-bottom: 1rem;
   flex-direction: row;
-  width: 30rem;
+  width: 90%;
 }
 
 input.input-todo:focus {
