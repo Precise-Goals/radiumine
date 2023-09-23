@@ -69,6 +69,7 @@ ul.nav-links {
   column-gap: 2rem;
   list-style: none;
   font-size: 120%;
+  align-items: center;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -81,7 +82,7 @@ ul.nav-links {
   column-gap: 15%;
 }
 .image {
-  max-width: 30rem;
+  max-width: 25rem;
   width: 100%;
   border-radius: 50%;
 }
@@ -89,21 +90,23 @@ ul.nav-links {
   width: 100%;
   height: auto;
   border-radius: 50rem;
-  bottom: 3rem;
+  bottom: 1rem;
   position: relative;
+  filter: saturate(0.7) blur(0px);
   left: 1rem;
 }
 .task {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem 1rem;
+  margin: 2.76rem 1rem;
 }
 .tasklay {
   display: flex;
   flex-direction: row;
   align-items: center;
   overflow: hidden;
+  margin: 1.4rem 0;
   column-gap: 15%;
   justify-content: center;
 }

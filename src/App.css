@@ -188,7 +188,7 @@
   padding: 1rem 1rem;
   align-items: center;
   background: var(--wrappers);
-  min-height: 23rem;
+  max-height: 23.8rem;
   display: flex;
   min-width: 39%;
   max-width: 40%;
@@ -273,22 +273,8 @@ button.input-todo-button {
   cursor: pointer;
   font-size: 18px;
 }
-.themesbutton a {
-  text-decoration: none;
-  color: var(--outcolor);
-  font-family: "MA";
-  transition: all 0.4s ease;
-  background: var(--btext);
-  border: 3px solid var(--btext);
-  padding: 8px 17px;
-  border-radius: 32px;
-}
-.themesbutton a:hover {
-  background: transparent;
-  color: var(--btext);
-  border: 3px solid var(--elmcolors);
-}
-.nav-links li a {
+
+.nav-links li {
   text-decoration: none;
   display: flex;
   color: var(--elmcolors);
@@ -297,7 +283,17 @@ button.input-todo-button {
   flex-direction: column;
   align-items: center;
 }
-.nav-links li a::after {
+.web {
+  transition: all 0.4s ease;
+  color: var(--elmcolors);
+}
+.web:hover {
+  color: var(--wrappers);
+}
+.lis::after{
+  opacity: 0;
+}
+.nav-links li::after {
   content: " ";
   width: 40%;
   height: 4px;
@@ -308,10 +304,10 @@ button.input-todo-button {
   align-self: center;
   transition: all 0.4s ease;
 }
-.nav-links li a:hover::after {
+.nav-links li:hover::after {
   width: 30%;
 }
-.nav-links li a:hover {
+.nav-links li:hover {
   color: var(--wrappers);
 }
 .headquote {
@@ -339,6 +335,7 @@ button.input-todo-button {
   background-color: var(--barcolors);
   cursor: pointer;
 }
+
 #tsparticles {
   z-index: 0;
   position: relative;
@@ -417,7 +414,7 @@ ul.foot-links {
 .embed {
   width: 21px;
   border-radius: 49px;
-  background: #00d5ffd1;
+  background: #dcaeffd1;
 }
 
 .downcul {
@@ -434,7 +431,7 @@ ul.foot-links {
   background: white;
   color: black;
   text-align: center;
-  padding: 9px;
+  padding: 0;
   position: relative;
   left: 91rem;
   bottom: 5rem;
@@ -462,7 +459,34 @@ ul.foot-links {
 .links ul li a:hover {
   color: #a277ff;
 }
-
+.tope {
+  width: 100%;
+  padding: 9px;
+  border-radius: 50%;
+  scale: 1;
+  rotate: 0deg;
+  transition: all ease-in-out 0.3s;
+}
+.tope:hover {
+  filter: invert(1);
+  rotate: 360deg;
+  background-color: #7eb87e;
+}
+.switch {
+  text-decoration: none;
+  color: var(--outcolor);
+  font-family: "MA";
+  transition: all 0.4s ease;
+  background: var(--btext);
+  border: 3px solid var(--btext);
+  padding: 8px 17px;
+  border-radius: 32px;
+}
+.switch:hover {
+  background: transparent;
+  color: var(--btext);
+  border: 3px solid var(--elmcolors);
+}
 /* Mobiles */
 @media (max-width: 1024px) and (min-width: 120px) {
   .nhi {
