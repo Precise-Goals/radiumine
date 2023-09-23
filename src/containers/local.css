@@ -83,11 +83,15 @@ ul.nav-links {
 .image {
   max-width: 30rem;
   width: 100%;
-  margin: 0 auto;
+  border-radius: 50%;
 }
 .image img {
   width: 100%;
   height: auto;
+  border-radius: 50rem;
+  bottom: 3rem;
+  position: relative;
+  left: 1rem;
 }
 .task {
   display: flex;
@@ -99,6 +103,7 @@ ul.nav-links {
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
   column-gap: 15%;
   justify-content: center;
 }

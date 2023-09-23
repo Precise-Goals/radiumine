@@ -2,7 +2,7 @@ import React from 'react'
 import './local.css'
 import '../App.css'
 import { Link } from 'react-scroll';
-import top from '../assets/up.png'
+import top from '../assets/up.webp'
 
 const menuLinks = [
     { to: 'time', text: 'Pomodoro', offset: -100 },
@@ -50,7 +50,7 @@ const footer = () => {
                 </div>
             </div>
             <div className="downcul">Copyright© 2023 - Sarthak Patil all Rights Preserved</div>
-            <div className="topbutton"><Link to="nav" smooth={true} duration={500} offset={-25}><img src={top} alt="top" /></Link>
+            <div className="topbutton"><Link to="nav" smooth={true} duration={500} offset={-25}><img src={top} loading='lazy' alt="top" /></Link>
             </div>
         </div>
     )

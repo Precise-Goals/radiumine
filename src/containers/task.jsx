@@ -1,13 +1,16 @@
 import React from 'react'
 import './local.css'
 import { Todowrapper } from '../components/Todo/todowrapper'
-import homelogo from '../assets/4c4354109d557b6124a686775b94d7b6.png'
+import homelogo from '../assets/home.webp'
 const Task = () => {
     return (
         <div id='task' className='task'>
             <div className="headquote">Make Study Fun !</div>
             <div className="tasklay">
-                <div className="image"><img src={homelogo} loading='eager' alt="homelogo" /></div>
+                <div className="image"><div className="image">
+                    <img src={homelogo} alt="homelogo" loading='lazy' width="300" height="150" />
+                </div>
+                </div>
                 <Todowrapper />
             </div>
         </div>
