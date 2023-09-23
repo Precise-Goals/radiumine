@@ -87,11 +87,13 @@ const Navbar = ({ changeSectionClassName }) => {
             <li>
               <a href="https://precisegoals.pages.dev/">About Us</a>
             </li>
+            <li>
             <div className="themesbutton">
               <a href="/" onClick={(e) => { e.preventDefault(); toggleTheme(); }}>
                 Themes
-              </a>
+              </a>              
             </div>
+            </li>
           </ul>
         </div>
       </div>
