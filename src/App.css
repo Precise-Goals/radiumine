@@ -421,6 +421,11 @@ ul.foot-links {
     position: relative;
     font-weight: 800;
   }
+  .footer p{
+    display: contents;
+    color: #000000;
+    font-family: 'MA';
+  }
   .nav {
     display: none;
   }
@@ -441,22 +446,7 @@ ul.foot-links {
     justify-content: space-evenly;
     flex-direction: column;
   }
-  .circle1 {
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    background: black;
-    border-radius: 50%;
-    top: -40%;
-    left: -43%;
-  }
-  .circle2 {
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    bottom: -54%;
-    right: -47%;
-    background: gray;
-    border-radius: 50%;
+  .footera{
+    display: none;
   }
 }

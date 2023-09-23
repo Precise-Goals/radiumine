@@ -11,7 +11,7 @@ const menuLinks = [
 
 const footer = () => {
     return (
-        <div className='footer'>
+        <div className='footera'>
             <div className="footwrap">
                 <div className="leftcul">
                     <div className="logo">
