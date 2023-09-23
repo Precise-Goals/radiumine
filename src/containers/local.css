@@ -81,11 +81,13 @@ ul.nav-links {
   column-gap: 15%;
 }
 .image {
-  width: 30rem;
-  height: auto;
+  max-width: 30rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .image img {
   width: 100%;
+  height: auto;
 }
 .task {
   display: flex;
@@ -132,6 +134,6 @@ ul.nav-links {
   transition: ease-in-out 0.3s;
   text-decoration: none;
 }
-.details a:hover{
+.details a:hover {
   color: #de94a2;
 }

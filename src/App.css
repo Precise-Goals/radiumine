@@ -2,7 +2,9 @@
 @font-face {
   font-family: MA;
   src: url(./assets/fonts/MontserratAlternates-SemiBold.ttf);
+  font-display: swap; /* This ensures text is displayed using a system font until the web font is available. */
 }
+
 /* THemes */
 
 .Dark {
