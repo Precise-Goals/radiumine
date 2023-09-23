@@ -5,7 +5,7 @@
 }
 /* THemes */
 
-.dark {
+.Dark {
   --background: #000000;
   --wrappers: #7b8293;
   --outcolor: #000000;
@@ -16,9 +16,20 @@
   --ptext: #ffffff;
   --btext: #f4f4ff;
 }
-.obsidian {
+.Fantasy {
+  --background: #451952;
+  --wrappers: #ebbe99;
+  --elmcolors: #dddcffe8;
+  --outcolor: #662549;
+  --barcolors: #8b94a53d;
+  --intext: #b6b1b1;
+  --headers: #ffffff;
+  --ptext: #ffffff;
+  --btext: #bb3e58;
+}
+.Obsidian {
   --background: #2e293a;
-  --wrappers: #564262;
+  --wrappers: #4b2e5d;
   --outcolor: #5b4965;
   --barcolors: #b6b1b1;
   --intext: #b39ac2;
@@ -27,14 +38,14 @@
   --ptext: #ffffff;
   --btext: #decfff;
 }
-.lavender {
-  --background: #5c1253;
+.Lavender {
+  --background: #480e52;
   --wrappers: #733b6b;
   --outcolor: #620b56;
   --barcolors: #e6c4e3;
   --intext: #b6b1b1;
   --headers: #ffffff;
-  --elmcolors: #cb44d2;
+  --elmcolors: #f5a9f9;
   --ptext: #ffffff;
   --btext: #ff97f2;
 }
@@ -49,7 +60,7 @@
   --ptext: #ffffff;
   --btext: #f5e9ffe8;
 }
-.carbon {
+.Carbon {
   --background: #37435d;
   --wrappers: #878e9e;
   --elmcolors: #67b3f0e8;
@@ -60,7 +71,7 @@
   --ptext: #ffffff;
   --btext: #fafafa;
 }
-.pacific {
+.Pacific {
   --background: #082551;
   --wrappers: #677fa4;
   --outcolor: #355586;
@@ -71,7 +82,7 @@
   --ptext: #ffffff;
   --btext: #ccd4e1;
 }
-.chocolate {
+.Chocolate {
   --background: #533b3b;
   --wrappers: #d3a89a;
   --outcolor: #603f00;
@@ -82,16 +93,38 @@
   --ptext: #ffffff;
   --btext: #ffffff;
 }
-.strawberry {
-  --background: #f7c7dc;
-  --wrappers: #ffb7b7;
-  --outcolor: #940060;
-  --barcolors: #ff8f8f;
+.Strawberry {
+  --background: #f5d1e1;
+  --wrappers: #e79ab2;
+  --outcolor: #710b4d;
+  --barcolors: #e2b9b9;
   --intext: #d4d4d4;
-  --elmcolors: #eb6639;
+  --elmcolors: #bf3a87;
   --headers: #ffffff;
   --ptext: #ffffff;
-  --btext: #ff7777;
+  --btext: #e30286;
+}
+.Bush {
+  --background: #116619;
+  --wrappers: #79ac78;
+  --elmcolors: #d0e7d2;
+  --outcolor: #618264;
+  --barcolors: #8b94a53d;
+  --intext: #b6b1b1;
+  --headers: #ffffff;
+  --ptext: #ffffff;
+  --btext: #b0d9b1;
+}
+.Cream {
+  --background: #3d0c11;
+  --wrappers: #f78ca2;
+  --outcolor: #af2a49;
+  --barcolors: #f9dec9;
+  --intext: #b6b1b1;
+  --headers: #ffffff;
+  --elmcolors: #ffffff;
+  --ptext: #ffffff;
+  --btext: #f4f4ff;
 }
 /* Themes above */
 ::-webkit-scrollbar {
@@ -111,27 +144,29 @@
   -webkit-tap-highlight-color: none;
 }
 
-.default,
-.dark,
-.obsidian,
+.Dark,
+.Obsidian,
 .Sunset,
-.lavender,
+.Lavender,
 .Magenda,
-.chocolate,
-.pacific,
-.Forrest,
-.carbon,
-.strawberry {
+.Chocolate,
+.Pacific,
+.Carbon,
+.Cream,
+.Fantasy,
+.Bush,
+.Strawberry {
   padding: 4% 4%;
   background: var(--background);
 }
 .todolist {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   overflow-y: scroll;
   scroll-behavior: smooth;
   flex-direction: column;
+  height: 15rem;
 }
 .todolist::-webkit-scrollbar {
   width: 3px;
@@ -256,6 +291,7 @@ button.input-todo-button {
   display: flex;
   color: var(--elmcolors);
   cursor: pointer;
+  transition: all 0.4s ease;
   flex-direction: column;
   align-items: center;
 }
@@ -268,10 +304,13 @@ button.input-todo-button {
   text-align: center;
   display: block;
   align-self: center;
-  transition: all 0.7s ease;
+  transition: all 0.4s ease;
 }
 .nav-links li a:hover::after {
-  width: 60%;
+  width: 30%;
+}
+.nav-links li a:hover {
+  color: var(--wrappers);
 }
 .headquote {
   color: var(--elmcolors);
@@ -290,11 +329,13 @@ button.input-todo-button {
   border-radius: 4px;
 }
 .todolist::-webkit-scrollbar {
-  width: 7.5px;
+  width: 12px;
+  cursor: pointer;
 }
 .todolist::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: var(--barcolors);
+  cursor: pointer;
 }
 #tsparticles {
   z-index: 0;
@@ -405,11 +446,19 @@ ul.foot-links {
 .topbutton a {
   display: contents;
 }
-.todobutton:hover{
+.todobutton:hover {
   background-color: #000000;
 }
-.todobutton a img:hover{
+.todobutton a img:hover {
   filter: invert(1);
+}
+.links ul li a {
+  cursor: pointer;
+  color: #ffc9ee;
+  transition: all ease-in-out 0.3s;
+}
+.links ul li a:hover {
+  color: #a277ff;
 }
 
 /* Mobiles */
@@ -421,10 +470,10 @@ ul.foot-links {
     position: relative;
     font-weight: 800;
   }
-  .footer p{
+  .footer p {
     display: contents;
     color: #000000;
-    font-family: 'MA';
+    font-family: "MA";
   }
   .nav {
     display: none;
@@ -446,7 +495,7 @@ ul.foot-links {
     justify-content: space-evenly;
     flex-direction: column;
   }
-  .footera{
+  .footera {
     display: none;
   }
 }

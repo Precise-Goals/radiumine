@@ -2,55 +2,57 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import './local.css';
 import '../App.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faDragon , faHollyBerry,faShieldCat,faIceCream ,faCookie,faSpa,faMoon,faPlantWilt,faEarthAsia, faBridgeWater, faFireFlameSimple} from '@fortawesome/free-solid-svg-icons';
 
 const themes = [
-  "pacific",
-  "strawberry",
-  "dark",
-  "obsidian",
-  "lavender",
+  "Pacific",
+  "Strawberry",
+  "Dark",
+  "Obsidian",
+  "Lavender",
   "Magenda",
-  "carbon",
-  "chocolate",
+  "Cream",
+  "Carbon",
+  "Bush",
+  "Fantasy",
+  "Chocolate",
 ];
+
 
 const menuLinks = [
   { to: 'time', text: 'Pomodoro', offset: -100 },
-  { to: 'top', text: 'Todo', offset: -25 },
+  { to: 'nav', text: 'Todo', offset: -25 },
+  { to: 'down', text: 'Socials', offset: -25 },
 ];
 
 const Navbar = ({ changeSectionClassName }) => {
-  const [theme, setTheme] = useState("pacific");
-  const [notification, setNotification] = useState(null);
-
+  const [theme, setTheme] = useState(() => {
+    const storedTheme = localStorage.getItem('theme');
+    return storedTheme && themes.includes(storedTheme) ? storedTheme : "Pacific";
+  });
+  const [notification, setNotification] = useState(theme);
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme && themes.includes(storedTheme)) {
       setTheme(storedTheme);
     }
-  }, []);
+  }, [theme]);
 
   const toggleTheme = () => {
     const currentIndex = themes.indexOf(theme);
     const nextIndex = (currentIndex + 1) % themes.length;
     const nextTheme = themes[nextIndex];
-
-    // Save the theme to local storage
     localStorage.setItem('theme', nextTheme);
-
     setTheme(nextTheme);
     changeSectionClassName(nextTheme);
-
-    // Display the notification for 3 seconds
     setNotification(nextTheme);
-    // setTimeout(() => {
-    //   setNotification(null);
-    // }, 3000);
   };
 
   useEffect(() => {
     changeSectionClassName(theme);
   }, [theme, changeSectionClassName]);
+
   const Notification = ({ theme }) => {
     return (
       <div className="notification">
@@ -59,7 +61,7 @@ const Navbar = ({ changeSectionClassName }) => {
     );
   };
   return (
-    <nav className="nav">
+    <nav className="nav" id='nav'>
       <div className="overlay">
         <div className="bar">
           <div className="logo">
@@ -87,7 +89,7 @@ const Navbar = ({ changeSectionClassName }) => {
             </li>
             <div className="themesbutton">
               <a href="/" onClick={(e) => { e.preventDefault(); toggleTheme(); }}>
-                Switch Theme
+                Themes
               </a>
             </div>
           </ul>
@@ -101,4 +103,3 @@ const Navbar = ({ changeSectionClassName }) => {
 
 
 export default Navbar;
- 

@@ -54,7 +54,6 @@ a {
 .kid1 {
   background: purple;
   bottom: 7px;
-  filter: drop-shadow(0px 0px 2rem purple);
   left: 14px;
 }
 
@@ -72,6 +71,7 @@ ul.nav-links {
   font-size: 120%;
   font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 .bar {
   display: flex;
@@ -125,4 +125,13 @@ ul.nav-links {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.details a {
+  color: #d994de;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+}
+.details a:hover{
+  color: #de94a2;
 }

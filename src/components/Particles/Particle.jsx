@@ -36,10 +36,10 @@ function App() {
               number: {
                 density: {
                   enable: true,
-                  area: 1080
+                  area: 720
                 },
-                limit: 25,
-                value: 15,
+                limit: 35,
+                value: 25,
               },
               opacity: {
                 animation: {
@@ -50,9 +50,9 @@ function App() {
                 },
                 random: {
                   enable: true,
-                  minimumValue: 0.01,
+                  minimumValue: 0.08,
                 },
-                value: 0.6,
+                value: 0.67,
               },
               shape: {
                 type: 'circle',
@@ -61,9 +61,9 @@ function App() {
               size: {
                 random: {
                   enable: true,
-                  minimumValue:2
+                  minimumValue:1
                 },
-                value: 7 
+                value: 6.5 
               }
             }
           }}
