@@ -14,6 +14,7 @@ export const Todoform = ({ addTodo }) => {
       <input
         type="text"
         required
+        autocomplete="off"
         placeholder="ㅤ"
         className="input-todo"
         value={value}
