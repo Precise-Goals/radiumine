@@ -7,7 +7,7 @@ import './App.css';
 
 
 function App() {
-  const [sectionClassName, setSectionClassName] = useState("Pacific"); // Initialize the section class name
+  const [sectionClassName, setSectionClassName] = useState("Obsidian"); // Initialize the section class name
 
   // Function to change the section class name
   const changeSectionClassName = (newClassName) => {

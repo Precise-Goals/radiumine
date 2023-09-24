@@ -222,12 +222,40 @@ form.Todoform {
   flex-direction: row;
   width: 90%;
 }
-
+body {
+  height: 100vh;
+}
+.scrollbar-track {
+  width: 0;
+  display: none;
+  opacity: 0;
+  width: null;
+}
+.scrollbar-track-y {
+  width: null;
+}
+.scrollbar-track.show,
+.scrollbar-track:hover {
+  display: none;
+  opacity: 0;
+  width: null;
+}
+.scrollbar-thumb {
+  opacity: 0;
+  display: none;
+  width: null;
+}
 input.input-todo:focus {
   padding: 2% 3%;
   font-weight: 600;
   outline: none;
   stroke: none;
+}
+.kid1 {
+  background: var(--wrappers);
+}
+.kid2 {
+  background: var(--barcolors);
 }
 button.input-todo-button {
   background: var(--outcolor);
@@ -239,6 +267,12 @@ button.input-todo-button {
   border: 2px solid var(--outcolor);
   border-radius: 0 11px 11px 0;
   cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+button.input-todo-button:hover {
+  background: var(--btext);
+  color: var(--outcolor);
+  border-left: 2px solid var(--btext);
 }
 .input-todo-button:focus {
   outline: none;
@@ -290,7 +324,7 @@ button.input-todo-button {
 .web:hover {
   color: var(--wrappers);
 }
-.lis::after{
+.lis::after {
   opacity: 0;
 }
 .nav-links li::after {
@@ -482,6 +516,7 @@ ul.foot-links {
   padding: 8px 17px;
   border-radius: 32px;
 }
+
 .switch:hover {
   background: transparent;
   color: var(--btext);
