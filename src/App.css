@@ -467,8 +467,8 @@ ul.foot-links {
   text-align: center;
   padding: 0;
   position: relative;
-  left: 91rem;
-  bottom: 5rem;
+  left: 90%;
+  bottom: 4rem;
   cursor: pointer;
   z-index: 7;
 }
