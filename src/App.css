@@ -5,6 +5,12 @@
   font-display: swap; /* This ensures text is displayed using a system font until the web font is available. */
 }
 
+@media (prefers-color-scheme: light) {
+  ::backdrop {
+    background-color: #fff;
+  }
+}
+
 /* THemes */
 
 .Dark {
