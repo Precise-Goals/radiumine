@@ -84,15 +84,12 @@ const Navbar = ({ changeSectionClassName }) => {
                 </Link>
               </li>
             ))}
-            <li>
-              <a className='web' href="https://precisegoals.pages.dev/">About Us</a>
-            </li>
             <li className='lis'>
-            <div className="themesbutton">
-              <a href="/" className='switch' onClick={(e) => { e.preventDefault(); toggleTheme(); }}>
-                Themes
-              </a>              
-            </div>
+              <div className="themesbutton">
+                <a href="/" className='switch' onClick={(e) => { e.preventDefault(); toggleTheme(); }}>
+                  Themes
+                </a>
+              </div>
             </li>
           </ul>
         </div>

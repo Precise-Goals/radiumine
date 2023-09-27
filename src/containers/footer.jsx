@@ -43,9 +43,6 @@ const footer = () => {
                                     </Link>
                                 </li>
                             ))}
-                            <li>
-                                <a href="https://precisegoals.pages.dev/">About Us</a>
-                            </li>
                         </ul>
                         <div className="embed"></div>
                     </div>
