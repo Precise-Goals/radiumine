@@ -4,7 +4,7 @@ import Task from './containers/task';
 import ParticleBackground from '../src/components/Particles/Particle'
 import Footer from './containers/footer';
 import './App.css';
-
+import Time from './containers/time'
 
 function App() {
   const [sectionClassName, setSectionClassName] = useState("Obsidian"); // Initialize the section class name
@@ -22,6 +22,7 @@ function App() {
         <div className='particles'><ParticleBackground /></div>
         <Navbar changeSectionClassName={changeSectionClassName} />
         <Task />
+        <Time/>
       </section>
       <div className='footer'>
         <Footer/>

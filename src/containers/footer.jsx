@@ -7,8 +7,8 @@ import top from '../assets/up1.png'
 
 
 const menuLinks = [
-    { to: 'time', text: 'Pomodoro', offset: -100 },
-    { to: 'nav', text: 'Todo', offset: -25 },
+    { to: 'time', text: 'Pomodoro ⌚', offset: -100 },
+    { to: 'nav', text: 'Todo 🚩', offset: -25 },
 ];
 
 const footer = () => {
@@ -43,6 +43,7 @@ const footer = () => {
                                     </Link>
                                 </li>
                             ))}
+                            <li><a href="https://precisegoals.pages.dev">About Me ✌️</a></li>
                         </ul>
                         <div className="embed"></div>
                     </div>
