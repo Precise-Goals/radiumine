@@ -11,7 +11,7 @@ const themes = [
   "Dark",
   "Obsidian",
   "Lavender",
-  "Magenda",
+  "Magenta",
   "Cream",
   "Carbon",
   "Bush",
@@ -21,8 +21,8 @@ const themes = [
 
 
 const menuLinks = [
-  { to: 'time', text: 'Pomodoro', offset: -100 },
-  { to: 'nav', text: 'Todo', offset: -25 },
+  { to: 'time', text: 'Pomodoro', offset: 0 },
+  { to: 'root', text: 'Todo', offset: -25 },
   { to: 'down', text: 'Socials', offset: -25 },
 ];
 

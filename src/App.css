@@ -57,7 +57,7 @@
   --ptext: #ffffff;
   --btext: #ff97f2;
 }
-.Magenda {
+.Magenta {
   --background: #5b2884;
   --wrappers: #b990dbbf;
   --elmcolors: #a277ff;
@@ -156,7 +156,7 @@
 .Obsidian,
 .Sunset,
 .Lavender,
-.Magenda,
+.Magenta,
 .Chocolate,
 .Pacific,
 .Carbon,
@@ -431,7 +431,7 @@ ul.foot-links {
   position: relative;
   display: flex;
   font-weight: bold;
-  font-size: 160%;
+  font-size: 150%;
   row-gap: 0.5rem;
   margin-right: 5%;
   flex-direction: column;
@@ -527,6 +527,118 @@ ul.foot-links {
   background: transparent;
   color: var(--btext);
   border: 3px solid var(--elmcolors);
+}
+
+.slider {
+  border: 2.7px solid var(--barcolors);
+  height: 25px;
+  padding: 0rem;
+  border-radius: 11px;
+}
+
+.thumb {
+  background-color: var(--barcolors);
+  height: 100%;
+  border-radius: 5px;
+  width: 1.6rem;
+}
+.thumb:focus-visible {
+  border: none;
+  outline: none;
+  stroke: none;
+}
+.Pomo {
+  background: var(--wrappers);
+  min-width: 39%;
+  border-radius: 11px;
+  padding: 2rem;
+  max-width: 40%;
+}
+.pomo img {
+  width: 75%;
+}
+#time {
+  position: relative;
+  padding: 3rem 0 2rem 0;
+  z-index: 3;
+}
+#time h1 {
+  margin-bottom: 4%;
+}
+.pomo {
+  background: linear-gradient(149deg, var(--wrappers), transparent);
+  border-radius: 1rem 10rem 1rem 10rem;
+  padding: 1rem 2px;
+}
+.overlayys {
+  display: flex;
+  align-items: center;
+  margin: 5rem 0 4rem 0;
+  column-gap: 10%;
+  justify-content: center;
+  flex-direction: row;
+}
+.overllayz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Timer {
+  align-self: center;
+  width: 10rem;
+}
+.Pomo h1 {
+  font-size: 2rem;
+  color: var(--btext);
+  margin: 0 0 1rem;
+}
+text.CircularProgressbar-text {
+  font-weight: bold;
+  font-family: "Poppins";
+  letter-spacing: 0.038em;
+}
+.buttons button {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  margin: 1rem 0;
+  cursor: pointer;
+  outline: none;
+  stroke: none;
+  background: var(--barcolors);
+  border: 1px solid var(--intext);
+  color: var(--outcolor);
+  transition: all 0.3s;
+  rotate: 0deg;
+}
+.buttons button:hover {
+  border: 1px solid var(--outcolor);
+  rotate: 360deg;
+  background: var(--outcolor);
+  color: var(--barcolors);
+}
+.settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.setter {
+  width: 85%;
+  row-gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.setter label {
+  font-family: "Poppins";
+  align-self: flex-start;
+  margin: 3px;
+  color: var(--btext);
+  letter-spacing: 0.04em;
+  font-weight: 800;
 }
 /* Mobiles */
 @media (max-width: 1024px) and (min-width: 120px) {

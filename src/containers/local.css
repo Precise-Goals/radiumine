@@ -145,12 +145,12 @@ ul.nav-links {
 .details a:hover {
   color: #de94a2;
 }
-.image {
+.image,.pomo {
   padding: 25px;
   border-radius: 50%;
   background: linear-gradient(0deg, var(--wrappers), transparent);
   animation-name: lmao;
-  animation-duration: 1.999999s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }

@@ -15,10 +15,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id='topper'>
       <div className='circle1'></div>
       <p className='nhi'>Swtich To Pc, laptop or bigger screens for using Early access of this app</p>
-      <section className={sectionClassName}>
+      <section className={sectionClassName} >
         <div className='particles'><ParticleBackground /></div>
         <Navbar changeSectionClassName={changeSectionClassName} />
         <Task />
