@@ -8,7 +8,7 @@ const Task = () => {
             <div className="headquote">Make Study Fun !</div>
             <div className="tasklay">
                 <div className="image"><div className="image">
-                    <img src={homelogo} alt="homelogo" loading='lazy' width="300" height="150" />
+                    <img src={homelogo} alt="homelogo" loading='eager' width="300" height="150" />
                 </div>
                 </div>
                 <Todowrapper />
