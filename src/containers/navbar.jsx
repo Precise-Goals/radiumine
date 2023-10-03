@@ -13,10 +13,11 @@ const themes = [
   "Lavender",
   "Magenta",
   "Cream",
+  "Gotham",
   "Carbon",
   "Bush",
   "Fantasy",
-  "Chocolate",
+  "Coffee",
 ];
 
 

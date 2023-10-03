@@ -14,26 +14,37 @@
 /* THemes */
 
 .Dark {
-  --background: #000000;
-  --wrappers: #7b8293;
+  --background: #062527;
+  --wrappers: #363c47;
   --outcolor: #000000;
-  --barcolors: #a39eaa;
+  --barcolors: #8590a6;
   --intext: #b6b1b1;
   --headers: #ffffff;
   --elmcolors: #ffffff;
   --ptext: #ffffff;
   --btext: #f4f4ff;
 }
-.Fantasy {
-  --background: #451952;
-  --wrappers: #ebbe99;
-  --elmcolors: #dddcffe8;
-  --outcolor: #662549;
-  --barcolors: #8b94a53d;
-  --intext: #b6b1b1;
+.Gotham {
+  --background: #000000;
+  --wrappers: #3a3939;
+  --outcolor: #000000;
+  --barcolors: #9d9898;
+  --intext: #ffffff;
   --headers: #ffffff;
+  --elmcolors: #ffffff;
   --ptext: #ffffff;
-  --btext: #bb3e58;
+  --btext: #f4f4f4;
+}
+.Fantasy {
+  --background: #421150;
+  --wrappers: #896784;
+  --elmcolors: #fffbd5e8;
+  --outcolor: #a3234e;
+  --barcolors: #b28fad;
+  --intext: #d8b8b8;
+  --headers: #ffffff;
+  --ptext: #ffb5b5;
+  --btext: #eee7ff;
 }
 .Obsidian {
   --background: #2e293a;
@@ -46,21 +57,21 @@
   --ptext: #ffffff;
   --btext: #decfff;
 }
-.Lavender {
+.Magenta {
   --background: #480e52;
   --wrappers: #733b6b;
   --outcolor: #620b56;
   --barcolors: #e6c4e3;
   --intext: #b6b1b1;
   --headers: #ffffff;
-  --elmcolors: #f5a9f9;
+  --elmcolors: #e58abe;
   --ptext: #ffffff;
-  --btext: #ff97f2;
+  --btext: #ffc3f8;
 }
-.Magenta {
-  --background: #5b2884;
-  --wrappers: #b990dbbf;
-  --elmcolors: #a277ff;
+.Lavender {
+  --background: #450b75;
+  --wrappers: #8246cc9e;
+  --elmcolors: #dac9ff;
   --outcolor: #804bab;
   --barcolors: #dfd2ea;
   --intext: #b6b1b1;
@@ -69,11 +80,11 @@
   --btext: #f5e9ffe8;
 }
 .Carbon {
-  --background: #37435d;
-  --wrappers: #878e9e;
-  --elmcolors: #67b3f0e8;
-  --outcolor: #525c70;
-  --barcolors: #8b94a53d;
+  --background: #0b245d;
+  --wrappers: #133279;
+  --elmcolors: #728dee;
+  --outcolor: #0052f8;
+  --barcolors: #c2cfe7cf;
   --intext: #b6b1b1;
   --headers: #ffffff;
   --ptext: #ffffff;
@@ -81,7 +92,7 @@
 }
 .Pacific {
   --background: #082551;
-  --wrappers: #677fa4;
+  --wrappers: #0059b38a;
   --outcolor: #355586;
   --barcolors: #9aaac3;
   --intext: #b6b1b1;
@@ -90,49 +101,66 @@
   --ptext: #ffffff;
   --btext: #ccd4e1;
 }
-.Chocolate {
-  --background: #533b3b;
-  --wrappers: #d3a89a;
-  --outcolor: #603f00;
-  --barcolors: #c5a7a7;
-  --intext: #b6b1b1;
-  --elmcolors: #c9c4a8;
-  --headers: #ffffff;
-  --ptext: #ffffff;
-  --btext: #ffffff;
-}
-.Strawberry {
-  --background: #f5d1e1;
-  --wrappers: #e79ab2;
-  --outcolor: #710b4d;
-  --barcolors: #e2b9b9;
-  --intext: #d4d4d4;
-  --elmcolors: #bf3a87;
-  --headers: #ffffff;
-  --ptext: #ffffff;
-  --btext: #e30286;
-}
-.Bush {
-  --background: #116619;
-  --wrappers: #79ac78;
-  --elmcolors: #d0e7d2;
-  --outcolor: #618264;
-  --barcolors: #8b94a53d;
-  --intext: #b6b1b1;
-  --headers: #ffffff;
-  --ptext: #ffffff;
-  --btext: #b0d9b1;
-}
-.Cream {
-  --background: #3d0c11;
-  --wrappers: #f78ca2;
-  --outcolor: #af2a49;
-  --barcolors: #f9dec9;
-  --intext: #b6b1b1;
+.Coffee {
+  --background: #38220f;
+  --wrappers: #967259;
+  --outcolor: #634832;
+  --barcolors: #dbc1ac;
+  --intext: #a7a5a5;
   --headers: #ffffff;
   --elmcolors: #ffffff;
+  --ptext: #dbc1ac;
+  --btext: #dbc1ac;
+}
+.Strawberry {
+  --background: #e9bfcc;
+  --wrappers: #d16a89;
+  --outcolor: #ae0c56;
+  --barcolors: #ff96b5;
+  --intext: #d0bbbb;
+  --elmcolors: #9e0146;
+  --headers: #ffffff;
   --ptext: #ffffff;
+  --btext: #f2dce4;
+  box-shadow: 0rem 2rem 4rem 1rem var(--barcolors) inset;
+}
+.Bush {
+  --background: #443508;
+  --wrappers: #026625e8;
+  --elmcolors: #d0e7d2;
+  --outcolor: #4b8c00;
+  --barcolors: #a4ddc3eb;
+  --intext: #b6b1b1;
+  --headers: #ffffff;
+  --ptext: #ffffff;
+  --btext: #c3ebc4;
+}
+.Cream {
+  --background: #6d4949;
+  --wrappers: #c17e7e;
+  --outcolor: #f18282;
+  --barcolors: #f6c1c1;
+  --intext: #b6b1b1;
+  --headers: #ffffff;
+  --elmcolors: #f6c1c1;
+  --ptext: #6b4444;
   --btext: #f4f4ff;
+}
+.Dark,
+.Obsidian,
+.Sunset,
+.Lavender,
+.Magenta,
+.Coffee,
+.Pacific,
+.Carbon,
+.Cream,
+.Fantasy,
+.Gotham,
+.Bush,
+.Strawberry {
+  padding: 4% 4%;
+  background: var(--background);  
 }
 /* Themes above */
 ::-webkit-scrollbar {
@@ -150,22 +178,6 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: none;
-}
-
-.Dark,
-.Obsidian,
-.Sunset,
-.Lavender,
-.Magenta,
-.Chocolate,
-.Pacific,
-.Carbon,
-.Cream,
-.Fantasy,
-.Bush,
-.Strawberry {
-  padding: 4% 4%;
-  background: var(--background);
 }
 .todolist {
   width: 100%;

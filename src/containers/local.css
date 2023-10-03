@@ -79,7 +79,7 @@ ul.nav-links {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  column-gap: 15%;
+  column-gap: 30%;
 }
 .image {
   max-width: 26.75rem;
