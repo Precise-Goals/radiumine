@@ -11,14 +11,15 @@ const SettingsContext = React.createContext({});
 
 function Playbutton(props) {
   return (
-    <button {...props}>
+    <button {...props} aria-label="Play">
       <FontAwesomeIcon icon={faPlay} />
     </button>
   )
 }
+
 function Pausebutton(props) {
   return (
-    <button {...props}>
+    <button {...props} aria-label="Pause">
       <FontAwesomeIcon icon={faPause} />
     </button>
   )
@@ -27,21 +28,23 @@ function Settings() {
   const SettingsInfo = useContext(SettingsContext);
   return (
     <div className="setter">
-      <label>Focus Timer: {SettingsInfo.focusMinutes} mins</label>
+      <label htmlFor="focusTimer">Focus Timer: {SettingsInfo.focusMinutes} mins</label>
       <ReactSlider
         thumbClassName="thumb"
         trackClassName="track"
         className="slider"
+        id="focusTimer"
         onChange={(newValue) => SettingsInfo.setFocusMinutes(newValue)}
         value={SettingsInfo.focusMinutes}
         min={30}
         max={240}
       />
-      <label>Break Timer: {SettingsInfo.breakMinutes} mins</label>
+      <label htmlFor="breakTimer">Break Timer: {SettingsInfo.breakMinutes} mins</label>
       <ReactSlider
         thumbClassName="thumb"
         trackClassName="track"
         className="slider"
+        id="breakTimer"
         onChange={(newValue) => SettingsInfo.setBreakMinutes(newValue)}
         value={SettingsInfo.breakMinutes}
         min={1}
@@ -126,9 +129,10 @@ function Maintimer() {
         </div>
         <div className="buttons">
           {isStop
-            ? <Playbutton onClick={()=>{setIsStop(false); isStopRef.current = false}}/>
-            : <Pausebutton onClick={()=>{setIsStop(true); isStopRef.current = true}}/>}
+            ? <Playbutton onClick={() => { setIsStop(false); isStopRef.current = false }} />
+            : <Pausebutton onClick={() => { setIsStop(true); isStopRef.current = true }} />}
         </div>
+
         <div className="settings">
           <SettingsContext.Provider value={{
             focusMinutes,
