@@ -50,8 +50,7 @@ const footer = () => {
                 </div>
             </div>
             <div className="downcul">Copyright© 2023 - Sarthak Patil all Rights Preserved</div>
-            <div className="topbutton"><Link to="root" smooth={true} duration={500} offset={-25}><img className='tope' src={top} loading='lazy' alt="top" /></Link>
-            </div>
+            <div className="topbutton"><Link to="root" smooth={true} duration={500} offset={-25}><img className='tope' width={50} height={50} src={top} loading='lazy' alt="top" /></Link></div>
         </div>
     )
 }

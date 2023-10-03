@@ -555,7 +555,7 @@ ul.foot-links {
   max-width: 40%;
 }
 .pomo img {
-  width: 75%;
+  width: fit-content;
 }
 #time {
   position: relative;
@@ -569,6 +569,7 @@ ul.foot-links {
   background: linear-gradient(149deg, var(--wrappers), transparent);
   border-radius: 1rem 10rem 1rem 10rem;
   padding: 1rem 2px;
+  width: 28rem;
 }
 .overlayys {
   display: flex;

@@ -19,8 +19,8 @@ const time = () => {
                         <Maintimer />
                     </div>
                 </div>
-                <div className="pomo">
-                    <img src={pomo} className='pomo' alt="pomodorotimer" loading='lazy' />
+                <div className="pomo" >
+                    <img src={pomo} className='pomo' alt="pomodorotimer" width="340.5px" height="368.5px" loading='lazy' />
                 </div>
             </div>
         </div>
