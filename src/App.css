@@ -11,6 +11,10 @@
   }
 }
 
+body{
+  background-color: var(--background);
+}
+
 /* THemes */
 
 .Dark {
@@ -26,6 +30,7 @@
 }
 .Gotham {
   --background: #000000;
+  --image: url(../src/assets/wallpapersden.com_batman-4k-gotham-city-digital_3840x2400.webp);
   --wrappers: #3a3939;
   --outcolor: #000000;
   --barcolors: #9d9898;
@@ -35,6 +40,7 @@
   --ptext: #ffffff;
   --btext: #f4f4f4;
 }
+
 .Fantasy {
   --background: #421150;
   --wrappers: #896784;
@@ -92,14 +98,16 @@
 }
 .Pacific {
   --background: #082551;
-  --wrappers: #0059b38a;
-  --outcolor: #355586;
+  --wrappers: #021b51d5;
+  --outcolor: #3555869d;
   --barcolors: #9aaac3;
   --intext: #b6b1b1;
+  --image: url(../src/assets/Untitled\ design.webp);
   --headers: #ffffff;
   --elmcolors: #abacfcbd;
   --ptext: #ffffff;
   --btext: #ccd4e1;
+  background-size: cover;
 }
 .Coffee {
   --background: #38220f;
@@ -114,6 +122,7 @@
 }
 .Strawberry {
   --background: #e9bfcc;
+  --image:url(../src/assets/strawberry.webp);
   --wrappers: #d16a89;
   --outcolor: #ae0c56;
   --barcolors: #ff96b5;
@@ -131,6 +140,7 @@
   --outcolor: #4b8c00;
   --barcolors: #a4ddc3eb;
   --intext: #b6b1b1;
+  --image:url(../src/assets/wallpaperflare.com_wallpaper.webp);
   --headers: #ffffff;
   --ptext: #ffffff;
   --btext: #c3ebc4;
@@ -160,7 +170,22 @@
 .Bush,
 .Strawberry {
   padding: 4% 4%;
-  background: var(--background);  
+  background: var(--background);
+}
+.Gotham,
+.Pacific,
+.Bush,
+.Strawberry {
+  background: var(--image);
+  background-size: cover;
+  background-position-x: 50%;
+}
+.Strawberry{
+  background-repeat: repeat;
+  background-size: 110%;
+}
+.Pacific,.Strawberry{
+  background-position-x: 60%;
 }
 /* Themes above */
 ::-webkit-scrollbar {
@@ -168,6 +193,7 @@
 }
 .App {
   text-align: center;
+  background-color: var(--background);
 }
 * {
   margin: 0;

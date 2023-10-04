@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-import pomo from '../assets/pomo.png'
+import pomo from '../assets/pomo.webp'
 import Maintimer from '../components/Timer/maintimer'
 import './local.css'
 
