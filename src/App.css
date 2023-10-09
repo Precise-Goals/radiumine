@@ -11,7 +11,7 @@
   }
 }
 
-body{
+body {
   background-color: var(--background);
 }
 
@@ -122,7 +122,7 @@ body{
 }
 .Strawberry {
   --background: #e9bfcc;
-  --image:url(../src/assets/strawberry.webp);
+  --image: url(../src/assets/strawberry.webp);
   --wrappers: #d16a89;
   --outcolor: #ae0c56;
   --barcolors: #ff96b5;
@@ -140,7 +140,7 @@ body{
   --outcolor: #4b8c00;
   --barcolors: #a4ddc3eb;
   --intext: #b6b1b1;
-  --image:url(../src/assets/wallpaperflare.com_wallpaper.webp);
+  --image: url(../src/assets/wallpaperflare.com_wallpaper.webp);
   --headers: #ffffff;
   --ptext: #ffffff;
   --btext: #c3ebc4;
@@ -180,11 +180,12 @@ body{
   background-size: cover;
   background-position-x: 50%;
 }
-.Strawberry{
+.Strawberry {
   background-repeat: repeat;
   background-size: 110%;
 }
-.Pacific,.Strawberry{
+.Pacific,
+.Strawberry {
   background-position-x: 60%;
 }
 /* Themes above */
@@ -597,7 +598,7 @@ ul.foot-links {
 }
 #time {
   position: relative;
-  padding: 3rem 0 2rem 0;
+  padding: 4rem 0 2rem 0;
   z-index: 3;
 }
 #time h1 {
@@ -670,7 +671,102 @@ text.CircularProgressbar-text {
   display: flex;
   flex-direction: column;
 }
+.Blogs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 0;
+  position: relative;
+  z-index: 6;
+}
 
+.wrappers {
+  width: 65%;
+  display: flex;
+  border-radius: 11px;
+  flex-direction: column;
+  align-items: center;
+}
+.desc {
+  color: var(--btext);
+  margin-left: 2%;
+  font-size: 101%;
+  font-weight: 400;
+  margin-top: 0.4%;
+}
+.content img {
+  border-radius: 11px;
+}
+.Flexbox {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Topics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 11px;
+  row-gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  text-align: initial;
+  background: var(--wrappers);
+  border-radius: 15px;
+  padding: 1%;
+  column-gap: 18%;
+}
+
+.Flexbox h1 {
+  color: var(--btext);
+  font-size: 250%;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  color: var(--btext);
+  font-size: 110%;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.a{
+  color: var(--btext);
+  font-weight:600;
+  font-family: MA;
+  font-size: 140%;
+  transition: all ease 0.3s;
+}
+.a:hover{
+  color: var(--barcolors);
+}
+.detail {
+  color: var(--barcolors);
+  font-size: 95%;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+.detail a {
+  color: var(--elmcolors);
+  transition: 0.3s;
+}
+.detail a:hover {
+  color: var(--btext);
+}
+.left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2%;
+}
 .setter label {
   font-family: "Poppins";
   align-self: flex-start;

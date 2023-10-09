@@ -5,11 +5,10 @@ import ParticleBackground from '../src/components/Particles/Particle'
 import Footer from './containers/footer';
 import './App.css';
 import Time from './containers/time'
+import { Blogs } from './components/Blogs/Blogs';
 
 function App() {
   const [sectionClassName, setSectionClassName] = useState("Obsidian"); // Initialize the section class name
-
-  // Function to change the section class name
   const changeSectionClassName = (newClassName) => {
     setSectionClassName(newClassName);
   };
@@ -23,6 +22,7 @@ function App() {
         <Navbar changeSectionClassName={changeSectionClassName} />
         <Task />
         <Time/>
+        <Blogs/>
       </section>
       <div className='footer'>
         <Footer/>
