@@ -36,8 +36,8 @@ function Settings() {
         id="focusTimer"
         onChange={(newValue) => SettingsInfo.setFocusMinutes(newValue)}
         value={SettingsInfo.focusMinutes}
-        min={30}
-        max={240}
+        min={20}
+        max={180}
       />
       <label htmlFor="breakTimer">Break Timer: {SettingsInfo.breakMinutes} mins</label>
       <ReactSlider
@@ -47,8 +47,8 @@ function Settings() {
         id="breakTimer"
         onChange={(newValue) => SettingsInfo.setBreakMinutes(newValue)}
         value={SettingsInfo.breakMinutes}
-        min={1}
-        max={80}
+        min={5}
+        max={60}
       />
     </div>
   );
@@ -56,10 +56,8 @@ function Settings() {
 
 
 function Maintimer() {
-  const [focusMinutes, setFocusMinutes] = useState(45)
-  const [breakMinutes, setBreakMinutes] = useState(15)
-
-  const SettingsInfo = useContext(SettingsContext)
+  const [focusMinutes, setFocusMinutes] = useState(30)
+  const [breakMinutes, setBreakMinutes] = useState(10)
   const [isStop, setIsStop] = useState(true)
   const [secondsLeft, setSecondsLeft] = useState(0)
   const [mode, setMode] = useState('focus')
@@ -100,13 +98,20 @@ function Maintimer() {
     return () => clearInterval(interval);
   }, [focusMinutes, breakMinutes, tick]);
 
+
   const totalSeconds = mode === 'focus'
-    ? SettingsInfo.focusMinutes * 60
-    : SettingsInfo.breakMinutes * 60;
-  const percentage = Math.round(secondsLeft / totalSeconds);
-  const minutes = Math.floor(secondsLeft / 60)
+    ? focusMinutes * 60
+    : breakMinutes * 60;
+
+  const percentage = totalSeconds > 0
+    ? Math.round(secondsLeft/ totalSeconds * 100)
+    : 0;
+
+  const minutes = Math.floor(secondsLeft / 60);
   let seconds = secondsLeft % 60;
   if (seconds < 10) seconds = '0' + seconds;
+  console.log(percentage);
+
 
 
   return (
