@@ -43,7 +43,7 @@ const footer = () => {
                                     </Link>
                                 </li>
                             ))}
-                            <li><a href="https://precisegoals.pages.dev">Blogs</a></li>
+                            <li><a href="https://preciseblogs.pages.dev">Blogs</a></li>
                             <li><a href="https://precisegoals.pages.dev">About Me</a></li>
                         </ul>
                         <div className="embed"></div>
