@@ -6,6 +6,7 @@ import { CircularProgressbar } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
 import { buildStyles } from 'react-circular-progressbar'
 import ReactSlider from 'react-slider'
+import aud from '../../assets/aud.mp3'
 
 const SettingsContext = React.createContext({});
 
@@ -36,7 +37,7 @@ function Settings() {
         id="focusTimer"
         onChange={(newValue) => SettingsInfo.setFocusMinutes(newValue)}
         value={SettingsInfo.focusMinutes}
-        min={20}
+        min={30}
         max={180}
       />
       <label htmlFor="breakTimer">Break Timer: {SettingsInfo.breakMinutes} mins</label>
@@ -47,7 +48,7 @@ function Settings() {
         id="breakTimer"
         onChange={(newValue) => SettingsInfo.setBreakMinutes(newValue)}
         value={SettingsInfo.breakMinutes}
-        min={5}
+        min={15}
         max={60}
       />
     </div>
@@ -56,13 +57,14 @@ function Settings() {
 
 
 function Maintimer() {
-  const [focusMinutes, setFocusMinutes] = useState(30)
-  const [breakMinutes, setBreakMinutes] = useState(10)
+  const [focusMinutes, setFocusMinutes] = useState(60)
+  const [breakMinutes, setBreakMinutes] = useState(20)
   const [isStop, setIsStop] = useState(true)
   const [secondsLeft, setSecondsLeft] = useState(0)
   const [mode, setMode] = useState('focus')
   const isStopRef = useRef(isStop);
   const secondsLeftRef = useRef(secondsLeft)
+  const [playAudio, setPlayAudio] = useState(false);
   const modeRef = useRef(mode)
 
 
@@ -99,6 +101,12 @@ function Maintimer() {
   }, [focusMinutes, breakMinutes, tick]);
 
 
+  useEffect(() => {
+    if (modeRef.current !== mode) {
+      setPlayAudio(true);
+    }
+  }, [mode]);
+
   const totalSeconds = mode === 'focus'
     ? focusMinutes * 60
     : breakMinutes * 60;
@@ -132,6 +140,7 @@ function Maintimer() {
               })} />
           </SettingsContext.Provider>
         </div>
+        <audio src={aud} autoPlay={playAudio}></audio>
         <div className="buttons">
           {isStop
             ? <Playbutton onClick={() => { setIsStop(false); isStopRef.current = false }} />
